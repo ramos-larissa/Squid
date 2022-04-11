@@ -11,13 +11,11 @@ import "./styles.css";
 export default function AlertDialog(data) {
   const [open, setOpen] = React.useState(false);
 
-  const body = data;
-
-  console.log(body, "body do pop up");
+  const body = data.data;
 
   const handleClickOpen = () => {
     setOpen(true);
-  };
+  }
 
   const handleClose = () => {
     setOpen(false);
@@ -38,21 +36,22 @@ export default function AlertDialog(data) {
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             <h4>Legenda:</h4>
-            {body.data.legenda}
-            <br/>
-            {body?.data?.tags.map((item, index) => {
-              return(
-                <strong key={index} className="tag" >
+            {body?.legenda}
+            <br />
+            {body?.tags.map((item, index) => {
+              return (
+                <strong key={index} className="tag">
                   &nbsp;#{item}&nbsp;
                 </strong>
-              
               );
             })}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>OK</Button>
-          <Button href={body?.data?.link} target="_blank">Ir para o Instagram</Button>
+          <Button href={body?.link} target="_blank">
+            Ir para o Instagram
+          </Button>
         </DialogActions>
       </Dialog>
     </div>

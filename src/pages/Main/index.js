@@ -20,15 +20,13 @@ export default function Main() {
   }, [url]);
 
   return (
-    <>
+    <div className="container-body">
       <div className="content-title">
         <img src={logo} className="logo-title" />
       </div>
-      <div className="container-card">
-        <div className="content-card">
+      <div className="content-card">
           <CardImage response={body} />
-        </div>
       </div>
-    </>
+    </div>
   );
 }
