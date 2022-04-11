@@ -14,8 +14,14 @@ body{
 }
 
 .content-card{
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.container-card{
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }

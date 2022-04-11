@@ -4,6 +4,13 @@
     align-items: center;
     margin: 30px;
 }
+.btn-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+}
 
 img{
     height: 350px;
