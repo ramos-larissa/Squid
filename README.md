@@ -1,5 +1,10 @@
 # Front-end - Avalição Squid
 
+# Instruçoes 
+    Neste projeto voce precisa instalar o yarn, para carregar todas as dependencias. https://yarnpkg.com/pt-BR/docs/install#windows-stable instale o yarn na sua maquina de acordo com seu sistema operacional Na pasta clonada do projeto execute o comando: yarn install
+
+    Em seguida, execute o comando: yarn start Esse abrira automaticamente o localhost para visualização da aplicação.
+
 ## Proposta
 Criar uma página HTML utilizando de ponto de partida esse repositório.
 Depois, utilizando Javascript pegar os dados do JSON da requisição `(GET) - https://us-central1-squid-apis.cloudfunctions.net/test-front-basic`.
